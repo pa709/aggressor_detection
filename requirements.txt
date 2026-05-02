@@ -1,0 +1,34 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# Core computer vision & numerical
+# ──────────────────────────────────────────────────────────────────────────────
+numpy>=1.24.0
+opencv-python>=4.8.0
+pandas>=2.0.0
+scipy>=1.11.0
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Object detection & tracking  (bounding_boxes.py / track_clip.py / track_F138.py)
+# ──────────────────────────────────────────────────────────────────────────────
+ultralytics>=8.0.0        # YOLOv8 detection + pose
+lapx>=0.5.5               # Linear Assignment Problem solver (required by BoT-SORT)
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Deep learning  (module3_pose_estimator.py / train_tcn.py / train_tcn_pairwise.py)
+# ──────────────────────────────────────────────────────────────────────────────
+torch>=2.0.0
+scikit-learn>=1.3.0
+joblib>=1.3.0
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Optional — GPU-accelerated PyTorch (uncomment one line as appropriate)
+# ──────────────────────────────────────────────────────────────────────────────
+# torch>=2.0.0+cu118  --index-url https://download.pytorch.org/whl/cu118   # CUDA 11.8
+# torch>=2.0.0+cu121  --index-url https://download.pytorch.org/whl/cu121   # CUDA 12.1
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Optional — Real-ESRGAN super-resolution (bounding_boxes.py --sr flag only)
+# ──────────────────────────────────────────────────────────────────────────────
+# basicsr
+# facexlib
+# gfpgan
+# realesrgan
